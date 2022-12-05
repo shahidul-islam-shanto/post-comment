@@ -1,3 +1,18 @@
 #comment{
     margin-left: 100px;
+    text-align: left;
+    
+}
+.img-area{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    padding-left: 10px;
+}
+.img-area img{
+    border-radius: 50%;
+   
+}
+.comment{
+    padding-left: 10px;
 }

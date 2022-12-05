@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router';
 import CommentDetail from './commentDetail/CommentDetail';
-
+//import fakeData from '../../fakeData/FakeData.json';
 
 
 const Comment = () => {
     const {detailId} = useParams()
+    
     const [comment, setComment ] = useState([])
-    console.log(comment);
-   
+    
      
     useEffect(() => {
         const url = `https://jsonplaceholder.typicode.com/comments?postId=${detailId}`
@@ -19,14 +19,12 @@ const Comment = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
- 
-        <div>
-            {
-                comment.map(pd => <CommentDetail comment={pd}></CommentDetail>)
-            }
-            {/* <h1>This is a Comment :{detailId}</h1>
-            <p>{}</p> */}
-          
+        
+        <div>       
+            <h1 id='comment'>Comments</h1>  
+          {
+             comment.map(pd => <CommentDetail comment={pd}></CommentDetail>)
+          }
         </div>
     );
 };
