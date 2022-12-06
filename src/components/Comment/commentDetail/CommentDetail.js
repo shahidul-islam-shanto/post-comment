@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CommentDetail.css';
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 
 const CommentDetail = (props) => {
     const { name, email, body } = props.comment
-    console.log(props);
+
+    //like click
+    const [color, setColor]  = useState('')
+   
     return (
     <div className='post-detail' id='comment'>
          <div className='img-area'>
@@ -14,7 +18,8 @@ const CommentDetail = (props) => {
             <h4>Email: {email}</h4>
             <p>{body}</p>
         </div>
-    </div>
+        <ThumbUpIcon className='icon' onClick={()=> setColor(color ? "" : 'primary')} color={color} ></ThumbUpIcon>
+        </div> 
     );
 };
 
