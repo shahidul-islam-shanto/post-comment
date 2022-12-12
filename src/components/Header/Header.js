@@ -28,7 +28,6 @@ const Header = () => {
               eGunjon
             </Typography>
             <Button color="inherit">Post</Button>
-           
             <Button color="inherit">Comment</Button>
           </Toolbar>
         </AppBar>

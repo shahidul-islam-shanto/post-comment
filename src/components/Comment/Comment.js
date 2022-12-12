@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router';
-import CommentDetail from './commentDetail/CommentDetail';
+import CommentDetail from '../commentDetail/CommentDetail';
 //import fakeData from '../../fakeData/FakeData.json';
 
 

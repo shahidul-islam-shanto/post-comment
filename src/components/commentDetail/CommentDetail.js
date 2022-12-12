@@ -11,7 +11,7 @@ const CommentDetail = (props) => {
     return (
     <div className='post-detail' id='comment'>
          <div className='img-area'>
-            <img src="https://i.postimg.cc/jjVvfsSs/images-5.jpg" alt="" />
+            <img src="https://i.postimg.cc/pd1KMDXD/images-5.jpg" alt="" />
          </div>
         <div className='comment'>
             <h3>Name: {name}</h3>
